@@ -23,7 +23,7 @@ def parsing_last_hour():
         max_cleaned_price = max(damp)
         changing_value = max_cleaned_price/min_cleaned_price
 
-        if  changing_value > 1:
+        if changing_value > 1:
             print(f'The price value has changed over the past hour by {changing_value}%')
         else:
             print("")

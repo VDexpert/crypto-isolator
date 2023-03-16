@@ -22,7 +22,8 @@ class AnalyzerALT(models.Model):
     url = models.CharField(verbose_name='Ссылка на динамику актива альткоина', max_length=2000, unique=False)
     div_class = models.CharField(verbose_name='div class', max_length=300, help_text='Укажите div, из которого необходимо получить данные', **NULLABLE)
     alert = models.CharField(max_length=100, verbose_name='Поле для оповещения пользователя об изменении цены более, чем на 1%', **NULLABLE)
+    dependence = models.SmallIntegerField(verbose_name='Зависимость от цены bitcoin', **NULLABLE)
 
     class Meta:
-        verbose_name = 'Анализатор altcoin'
-        verbose_name_plural = 'Анализаторы altcoin'
+        verbose_name = 'Анализатор-корректор altcoin'
+        verbose_name_plural = 'Анализаторы-корректоры altcoin'
