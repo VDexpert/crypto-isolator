@@ -70,6 +70,8 @@ def scraper_alt():
                         if dependence:
                             cleaned_price = float(elem.text) - (float(elem.text)*float(dependence))
                             print(f'dependenceON-price {elem.text}, dependenceOFF-price {cleaned_price}, {timezone.now()}')
+                        else:
+                            print(f'dependenceON-price {elem.text}, {timezone.now()}')
 
                 end = int(time.time())
                 timing -= (end - start)
