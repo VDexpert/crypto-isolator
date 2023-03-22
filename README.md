@@ -1,7 +1,7 @@
 # crypto-isolator
 Cryptocurrency exchange site scraping module using Selenium.
 
-The main function of the module is to exclude the influence of Bitcoin price dynamics on the price dynamics of any Altcoin (or several).
+The main function of the module is to exclude the influence of Bitcoin price dynamics on the price dynamics of any Altcoin (or several Altcoins).
 
 The module is immune to any bot tracking algorithms. 100% protection of the module from blocking is built on protection from 3 algorithms 
 for tracking the behavior of bots:
